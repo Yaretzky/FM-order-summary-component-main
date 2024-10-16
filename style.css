@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-weight: 500;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.card {
+    width: 450px;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.wrapper > * {
+    margin: 13px 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem;
+    font-size: 1.8rem;
+}
+
+.header-img img {
+    width: 100%;
+    border-radius: 1.5rem 1.5rem 0 0 ;
+}
+
+
+.heading {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.description {
+    font-size: 1.8rem;
+    color: hsl(224, 23%, 55%);
+    line-height: 2.5rem;
+}
+
+.payment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 1rem;
+    padding: 2.5rem;
+}
+
+.payment a {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.payment-plan {
+    margin-right: 7.5rem;
+}
+
+.payment-plan .bold {
+    font-weight: 900;
+}
+
+.payment-plan .bright {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color:hsl(224, 23%, 55%);
+}
+
+button.proceed {
+    background-color: hsl(245, 75%, 52%);
+    border: none;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    color: white;
+    font-weight: 900;
+    box-shadow: 0 10px 20px 2px hsl(225, 100%, 98%); 
+    cursor: pointer;
+}
+
+button.cancel {
+    background-color: white;
+    border: none;
+    color: hsl(224, 23%, 55%);
+    font-weight: 900;
+    cursor: pointer;
+}
+
+button.proceed:hover {
+    opacity: 0.8;
+}
+
+.payment a:hover {
+    opacity: 0.8; 
+}
+
+
+@media (max-width: 425px) {
+
+    html {
+        font-size: 10px;
+    }
+
+    .wrapper {
+        padding: 1.5rem;
+    }
+
+    .card {
+        width: 330px;
+    }
+
+    .payment {
+        padding: 2rem;
+    }
+
+    .description {
+        font-size: 1.6rem;
+        margin: 0 1.5rem 1rem;
+    }
+
+    .payment-plan {
+        margin-right: 2.5rem;
+    }
+
+    .payment-plan .bold {
+        font-size: 1.6rem;
+    }
+
+    .heading {
+        font-size: 2.8rem;
+        font-weight: 900;
+        color: hsl(223, 47%, 23%);
+    }
+
+    .payment a {
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+
+    button.proceed {
+        font-size: 1.6rem;
+        padding: 1.7rem;
+        font-weight: 700;
+    }
+
+    button.cancel {
+        font-size: 1.5rem;
+    }
+
+}
